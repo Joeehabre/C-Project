@@ -14,6 +14,8 @@ Focus areas: processes, pipes, files, sockets, and minimal OS/networking primiti
 |---|---|---|
 | **minishell** | Tiny Unix-like shell with `cd`, `pwd`, `history`, `exit`, pipes `|`, redirection `< > >>`, background `&` | `fork/exec`, `pipe`, `dup2`, signals, parsing |
 | **http_server** | Minimal HTTP/1.0 static file server serving `./www` | TCP sockets, request parsing, MIME, I/O |
+| **rle_compressor** | Run-Length Encoding compressor/decompressor (`.rle`) | Binary I/O, encoding, streaming |
+| **wc_clone** | Minimal re-implementation of Unix `wc` | Text processing, stdin handling |
 
 ## 🚀 Quick Start
 ```bash
@@ -24,9 +26,3 @@ cd minishell && make
 ls -la | grep '^d' > dirs.txt
 cat < input.txt | wc -l
 sleep 5 &
-
-# http_server
-cd ../http_server && make
-mkdir -p www && echo "hello from joe" > www/index.html
-./http_server 8080
-# open http://localhost:8080
