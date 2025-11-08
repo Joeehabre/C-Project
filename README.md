@@ -12,8 +12,8 @@ Focus areas: processes, pipes, files, sockets, and minimal OS/networking primiti
 ## 🔧 Projects
 | Project | What it is | Concepts |
 |---|---|---|
-| **minishell/** | Tiny Unix-like shell with `cd`, `pwd`, `history`, `exit`, pipes `|`, redirection `< > >>`, background `&` | `fork/exec`, `pipe`, `dup2`, signals, parsing |
-| **http_server/** | Minimal HTTP/1.0 static file server serving `./www` | TCP sockets, request parsing, MIME, I/O |
+| **minishell** | Tiny Unix-like shell with `cd`, `pwd`, `history`, `exit`, pipes `|`, redirection `< > >>`, background `&` | `fork/exec`, `pipe`, `dup2`, signals, parsing |
+| **http_server** | Minimal HTTP/1.0 static file server serving `./www` | TCP sockets, request parsing, MIME, I/O |
 
 ## 🚀 Quick Start
 ```bash
