@@ -1,5 +1,7 @@
 # C Systems Projects
 
+![Build](https://github.com/Joeehabre/C-Projects/actions/workflows/build.yml/badge.svg)
+
 A collection of systems programming projects in C by Joe Habre (AUB).  
 Each project targets a different area of low-level programming: processes, pipes, sockets, and binary I/O.
 
