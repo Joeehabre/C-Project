@@ -1,6 +1,5 @@
-```make
-CC = gcc
-CFLAGS = -Wall -Wextra -O2 -std=c11
+CC     = gcc
+CFLAGS = -Wall -Wextra -Wpedantic -O2 -std=c11
 
 all: http_server
 

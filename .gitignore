@@ -5,6 +5,12 @@
 /dist
 /build
 
+# project binaries
+wc_clone/wc_clone
+minishell/minishell
+http_server/http_server
+rle_compressor/rle
+
 # editor
 .vscode/
 .idea/

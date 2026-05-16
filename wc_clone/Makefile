@@ -1,7 +1,8 @@
-CC=gcc
-CFLAGS=-Wall -Wextra -Werror -O2 -std=c11
+CC     = gcc
+CFLAGS = -Wall -Wextra -Wpedantic -O2 -std=c11
 
 all: wc_clone
+
 wc_clone: src/wc.c
 	$(CC) $(CFLAGS) src/wc.c -o wc_clone
 

@@ -1,28 +1,49 @@
-# C-Systems-Projects
+# C Systems Projects
 
-A curated set of **systems programming** projects in **C** by Joe Habre (AUB).  
-Focus areas: processes, pipes, files, sockets, and minimal OS/networking primitives.
+A collection of systems programming projects in C by Joe Habre (AUB).  
+Each project targets a different area of low-level programming: processes, pipes, sockets, and binary I/O.
 
-<p align="left">
-  <img alt="MIT" src="https://img.shields.io/badge/License-MIT-green">
-  <img alt="Language" src="https://img.shields.io/badge/C-std%2Fc11-blue">
-  <img alt="Platform" src="https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-lightgrey">
-</p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Language](https://img.shields.io/badge/C-C11-blue)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-lightgrey)
 
-## 🔧 Projects
-| Project | What it is | Concepts |
+---
+
+## Projects
+
+| Project | Description | Key Concepts |
 |---|---|---|
-| **minishell** | Tiny Unix-like shell with `cd`, `pwd`, `history`, `exit`, pipes `|`, redirection `< > >>`, background `&` | `fork/exec`, `pipe`, `dup2`, signals, parsing |
-| **http_server** | Minimal HTTP/1.0 static file server serving `./www` | TCP sockets, request parsing, MIME, I/O |
-| **rle_compressor** | Run-Length Encoding compressor/decompressor (`.rle`) | Binary I/O, encoding, streaming |
-| **wc_clone** | Minimal re-implementation of Unix `wc` | Text processing, stdin handling |
+| [minishell](minishell/) | Unix shell with pipes, redirection, background jobs, and builtins | `fork/exec`, `pipe`, `dup2`, signals |
+| [http_server](http_server/) | Static file HTTP/1.1 server with URL decoding and path safety | TCP sockets, MIME types, request parsing |
+| [rle_compressor](rle_compressor/) | Run-Length Encoding compressor/decompressor | Binary I/O, streaming, encoding |
+| [wc_clone](wc_clone/) | Reimplementation of Unix `wc` with flag support | Text processing, stdin/file I/O |
 
-## 🚀 Quick Start
+---
+
+## Quick Start
+
 ```bash
-# minishell
-cd minishell && make
-./minishell
-# examples
-ls -la | grep '^d' > dirs.txt
-cat < input.txt | wc -l
-sleep 5 &
+# Clone
+git clone https://github.com/Joeehabre/C-Projects.git
+cd C-Projects
+
+# Build any project
+cd minishell && make && ./minishell
+cd http_server && make && mkdir -p www && echo "<h1>Hello</h1>" > www/index.html && ./http_server 8080
+cd wc_clone && make && echo "hello world" | ./wc_clone
+cd rle_compressor && make && ./rle c input.bin output.rle
+```
+
+---
+
+## Requirements
+
+- GCC (or Clang) with C11 support
+- POSIX-compliant OS (Linux or macOS)
+- GNU Make
+
+---
+
+## License
+
+[MIT](LICENSE) — Joe Habre
