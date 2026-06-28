@@ -11,6 +11,10 @@ minishell/minishell
 http_server/http_server
 rle_compressor/rle
 
+# runtime artifacts (created when following the READMEs)
+http_server/www/
+*.rle
+
 # editor
 .vscode/
 .idea/
