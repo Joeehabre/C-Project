@@ -17,3 +17,6 @@ rle_compressor/rle
 
 # OS
 .DS_Store
+
+# Claude Code local artifacts
+.claude/
