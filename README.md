@@ -48,4 +48,4 @@ cd rle_compressor && make && ./rle c input.bin output.rle
 
 ## License
 
-[MIT](LICENSE) — Joe Habre
+[MIT](LICENSE), Joe Habre
